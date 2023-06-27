@@ -19,6 +19,8 @@ function handleParticipantAdd(){
 
   console.log('voce adicionou um novo participante')
 }
+
+
 function handleParticipantRemove (name: string){
        Alert.alert("remover", `remover participante ${name}?`,  // Alerta para remoção de participante
        [
@@ -29,11 +31,13 @@ function handleParticipantRemove (name: string){
       {
         text: 'não',
         style: 'cancel'
-      }
+      },
     ]);
 
        console.log(`voce removel participante ${name}`)
 }
+
+
 return (
           <View style={styles.container}>
                 <Text style={styles.eventName}>Cohab 
@@ -74,3 +78,8 @@ return (
           </View>  
       );
     }  
+
+
+
+// function upadateColorMap (colorMap) {colorMap.reght = 'blue'; }  //A função 'upadateColorMap' acessa o objeto 'colorMap' e troca o atributi 'reight' por 'blue' ou pela cor que desejar.
+    
